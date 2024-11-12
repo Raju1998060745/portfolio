@@ -1,0 +1,33 @@
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+/* Form styles */
+input, textarea {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    ring: 2px;
+    ring-color: #e0e7ff;
+}
